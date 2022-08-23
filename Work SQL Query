@@ -1,0 +1,20 @@
+SELECT
+	  a.[variable1]
+	  ,[variable2] as Variable2
+    ,[variable3] as Variable3
+  	,[variable4] as Variable4
+    ,RIGHT([variable5],3) as Variable5
+    ,[variable6] as Variable6
+    ,[variable7] as Variable7
+    ,[variable8] as Variable8
+    ,[variable9] as Variable9
+    ,[variable10] as Variable10
+    ,[variable11] as Variable11
+    ,[variable12] as Variable12
+    ,[variable13] as Variable13
+	  ,RIGHT(LEFT(b.[variable14],12),5) as Variable14
+  FROM [table] a, [table] b
+  WHERE b.[key] = a.[key] 
+  AND [Time_Variable] BETWEEN 'Date/Time 1' AND 'Date/Time 2' 
+  AND [variable15] = 'XXXXX'
+  ORDER BY [variable2] ASC;
